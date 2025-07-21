@@ -1,5 +1,115 @@
-header {
-  background-color: #fff;
+body {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
 }
 
-/*# sourceMappingURL=styles.css.map */
+.container {
+  max-width: 1190px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #000;
+  padding: 20px 0;
+}
+.header .menu__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 25px;
+}
+.header .menu__list-link {
+  color: #fff;
+}
+.header .menu__list-buy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .menu__button {
+  padding: 24px 30px;
+  background-color: #fff;
+  border-radius: 40px;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.burger {
+  background-image: url(../images/bg-section1.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.burger__row {
+  padding-top: 72px;
+}
+.burger__row h1 {
+  font-weight: 900;
+  font-size: 66px;
+  max-width: 562px;
+}
+.burger__row p {
+  font-size: 20px;
+  padding-top: 10px;
+  max-width: 510px;
+}
+.burger__row button {
+  padding: 20px 44px;
+  background-color: #fff;
+  font-weight: 700;
+  color: #000;
+  border-radius: 40px;
+  margin-top: 40px;
+}
+
+.about {
+  padding-top: 150px;
+  background-color: #000;
+}
+.about__title {
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.about__text {
+  font-size: 20px;
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 85px;
+}
+.about__text-item {
+  color: #EEEEEE;
+  opacity: 85%;
+}
+.about__text-item span {
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}

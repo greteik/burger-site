@@ -1,3 +1,130 @@
-header {
-    background-color: #fff;
+@mixin sectionTitle {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@mixin cardText {
+    font-size: 16px;
+}
+
+@mixin sectionText {
+    font-size: 20px;
+    text-align: center;
+}
+
+body {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.container {
+    max-width: 1190px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #000;
+    padding: 20px 0;
+
+    .menu {
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__list {
+            display: flex;
+            gap: 0 25px;
+            
+            &-link {
+                color: #fff;
+            }
+        }
+
+        &__list-buy {
+            display: flex;
+            gap: 0 25px;
+            align-items: center;
+        }
+        
+        &__button {
+            padding: 24px 30px;
+            background-color: #fff;
+            border-radius: 40px;
+            color: #000;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+.burger {
+    background-image: url(../images/bg-section1.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__row {
+        padding-top: 72px;
+
+        h1 {
+            font-weight: 900;
+            font-size: 66px;
+            max-width: 562px;
+        }
+
+        p {
+            font-size: 20px;
+            padding-top: 10px;
+            max-width: 510px;
+        }
+
+        button {
+            padding: 20px 44px;
+            background-color: #fff;
+            font-weight: 700;
+            color: #000;
+            border-radius: 40px;
+            margin-top: 40px;
+        }
+    }
+}
+
+
+.about {
+    padding-top: 150px;
+    background-color: #000;
+
+    &__title {
+        @include sectionTitle();
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        @include sectionText();
+        max-width: 820px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 0 85px;
+    }
+
+    &__text-item {
+        color: #EEEEEE;
+        opacity: 85%;
+    }
+
+    &__text-item span { 
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+    }
 }
