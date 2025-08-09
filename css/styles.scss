@@ -403,3 +403,20 @@ body {
         gap: 0 20px;
     }
 }
+
+
+@media(max-width: 920px) {
+    .burger__row {
+        text-align: center;
+
+        h1, p {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width: 810px) {
+    .header__inner {
+        display: none;
+    }
+}

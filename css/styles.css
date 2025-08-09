@@ -395,3 +395,17 @@ body {
   display: flex;
   gap: 0 20px;
 }
+
+@media (max-width: 920px) {
+  .burger__row {
+    text-align: center;
+  }
+  .burger__row h1, .burger__row p {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 810px) {
+  .header__inner {
+    display: none;
+  }
+}
